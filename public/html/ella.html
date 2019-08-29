@@ -7,39 +7,54 @@
 	<title>Ella - 웹사이트 만들기 - firebase 활용</title>
 <link rel="stylesheet" href="../css/fa.min.css">
 <link rel="stylesheet" href="../css/bootstrap.min.css">
-<link rel="stylesheet" href="../css/base.bootstrap.css">
+<!-- <link rel="stylesheet" href="../css/base.bootstrap.css"> -->
 <link rel="stylesheet" href="../css/animate.css">
 <link rel="stylesheet" href="../css/ella.css">
 <script src="../js/jquery-3.4.1.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/popper.min.js"></script>
 <script src="../js/wow.min.js"></script>
-<script src="../js/ella.js" defer="defer"></script>
 </head>
 <body>
 	<div class="wrap">
 		<div class="topdum">
-
+        <div class="tipbar"><span><b>MID-SEASON SALE UP TO 70% OFF. SHOP NOW</b></span><a href="#"><b>×</b></a></div>
 			<div class="topdum-cont">
 				<div class="logo">
-					<a href="#"><img src="../img/헤더풋터/ella-logo-black-compressor (1).png" alt="logo"></a>
+					<a href="#"><img src="../img/헤더풋터/ella-logo.png" alt="logo" class="logoimg"></a>
 				</div>
-				<span>Customer Service +018 900 6690</span> 
-				<button type="button" onclick="CSS:$(ii9).childen.slideDown();">▽</button>
+				<div class="content">
+					<form action="/search" method="get" class="search-bar" role="search">
+						<span>Customer Service +018 900 6690</span> 
+						<button type="button" onclick="CSS:$(ii9).childen.slideDown();">
+						<img src="../img/헤더풋터/국기/i-lang-1 (1).png" alt="eu" style="width: 20px; height:15px;"><i>&nbsp;&nbsp; ▽ </i>
+						</button>
+						<button type="button" onclick="CSS:$(ii9).childen.slideDown();" >
+						<img src="../img/헤더풋터/국기/i-lang-1 (1).png" alt="eu" style="width: 20px; height:15px;"><i>&nbsp;&nbsp; ▽ </i>
+						</button>
+						<!-- <input type="hidden" name="type" value="product"> -->
+						<input type="search" name="q" placeholder="Search" aria-label="Search Site" autocomplete="off">
+						<button type="submit" class="btn">
+							<svg data-icon="search" viewBox="0 0 1 1"><i class="fas fa-search"></i></svg>
+						</button>
+						<!-- <div class="search">search<i class="fas fa-search"></i></div> -->
+					</form>
 					<div class="ii9">
-						<img src="../img/헤더풋터/국기/i-lang-1 (1).png" alt="eu">
-						<img src="../img/헤더풋터/국기/i-lang-1 (1).png" alt="eu">
 					</div>
-					<div class="search">search<i class="fas fa-search"></i></div>
 					<div class="want">
-						<li class="shopping fas fa-shopping-cart">Shopping Cart <i style="border:none; background-color:darkorange; font-size: 20px; border-radius: 10px;">0</i></li>
-						<li class="wishing fas fa-heart">My Wish Lists</li>
+						<li><span>FREE SHIPPING ON ALL ORDERS. NO MINIMUM PURCHASE</span></li><br>
+						<li class="shopping fas fa-shopping-cart">Shopping Cart
+							<a style="width: 20px; height: 20px; text-align: center; line-height: 20px;
+							 border:none; border-radius: 8px; background-color:darkorange;"> 0 </a>
+						</li>&nbsp;&nbsp;&nbsp;
+						<li class="wishing fas fa-heart"> My Wish Lists &nbsp;&nbsp;</li> 
 						<a href="#">Sign In or Create an account</a>
 					</div>
+				</div>
 			</div>
 		</div>
 		<div class="clear"></div>
-		<header id="all" class="wrap">
+		<div id="all" class="wrap">
 			<div class="topbar">
 				 <ul class="menu">
 					<li><a href="#">NEW IN</a>
@@ -139,7 +154,7 @@
 			
 			
 			
-		</header>
+		</div>
 	</div>
 
 
@@ -154,6 +169,6 @@
 
 
 
-
+	<script src="../js/ella.js"></script>
 </body>
 </html>
