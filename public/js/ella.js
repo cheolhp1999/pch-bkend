@@ -29,6 +29,10 @@ function slide() {
  }
 
 
+ $(".showmore > a").click(function () {
+	$(".more").eq(0).stop().css({"display":"block", "opacity":1})
+});
+
 
 
 // $(document).ready(function () {

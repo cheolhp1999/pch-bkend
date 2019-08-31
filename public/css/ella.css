@@ -50,6 +50,6 @@ h1,h2,h3,h4,h5,h6,p,span {color: #777;}
 .packpic {width: 20%;}
 .remains {width:24px; height:32px; border: 1px solid #777; line-height: 32px;}
 
-.sm {width: 100px; height: 30px; border: 1px solid #444; text-align: center;}
-
+.sm {margin-top: 30px; width: 150px; height: 30px; padding : 5px; border: 1px solid #444; text-align: center;}
+.more {display: none; opacity:0; width:1172px; height: 100%;}
 
