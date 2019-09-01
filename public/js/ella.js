@@ -34,6 +34,13 @@ function slide() {
 });
 
 
+//  $(".feature .packpic2 > img").mouseover(function () {
+// 	$(this).eq(0).stop().animate(css({"width":"110%"}),500)
+// });
+//  $(".feature .packpic2 > img").mouseleave(function () {
+// 	$(this).eq(0).stop().animate(css({"width":"100%"}),1000)
+// });
+
 
 // $(document).ready(function () {
 	

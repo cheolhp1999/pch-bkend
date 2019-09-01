@@ -43,13 +43,30 @@ h1,h2,h3,h4,h5,h6,p,span {color: #777;}
 .subwrap {width: 1172px; margin-top: -5%; left:-16%;}
 .subwrap > img {padding: 20px;}
 .lin {width: 45%;}
+.lin2 {width: 40%;}
+.lin3 {width: 40%;}
 .txt {text-align:center; font-size: 16pt;}
+.txt2 {margin-top: -5px; text-align:center; font-family: 'HY견고딕'; width: 10%; height: 10px; font-size: 16pt;}
+.txt3 {margin-top: -5px; text-align:center; font-family: 'HY견고딕'; width: 20%; height: 10px; font-size: 16pt;}
+.stitle {margin-top: 30px;}
 
 .picwrap {width:1172px; height: 36rem; border:none; border: 1px solid red;}
+.picwrap2 {width:1172px; height: 45rem; border:none; border: 1px solid red;}
 
 .packpic {width: 20%;}
+.packpic2 {width: 30%;}
 .remains {width:24px; height:32px; border: 1px solid #777; line-height: 32px;}
 
-.sm {margin-top: 30px; width: 150px; height: 30px; padding : 5px; border: 1px solid #444; text-align: center;}
+.sm {margin-top: 30px; width: 250px; height: 30px; padding : 5px; border: 1px solid #444; text-align: center;}
 .more {display: none; opacity:0; width:1172px; height: 100%;}
 
+.scndwrap {position:relative; width: 100%; height:650px; margin: 0 auto; color:#222;}
+.scndwrap > img {position: absolute; width: 100%; height:100%; z-index:777;}
+.over{top: 45%; left: 55%; position: absolute; z-index: 888; text-align: center;}
+.overwrite {width: 500px; height: 60px; padding: 5px; text-align: center;}
+.lm {border: 1px solid #444; text-align: center; background-color: #222; color: white;}
+
+.feature .packpic2 > img:hover {transform: scale(1.2); translate: all 0.9s ease;}
+.feature .packpic2 > a:hover {background-color: white; color: #222;}
+
+.fsttxt {margin-top: 10px; font-family: 'HY견고딕'; font-size: 13pt;}
