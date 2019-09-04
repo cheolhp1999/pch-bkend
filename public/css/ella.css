@@ -21,11 +21,13 @@ h1,h2,h3,h4,h5,h6,p,span {color: #777;}
 .want .shopping:hover {opacity: 0.7}
 .want .wishing:hover {opacity: 0.7}
 
-.topbar {width:100%; height: 55px; line-height: 55px; margin-top: calc(20px); position: fixed; background-color: #222; color: #fff; text-align:center; z-index: 999;}
+.topbar {width:100%; height: 55px; line-height: 55px; margin-top: calc(20px); position: fixed; 
+	background-color: #222; color: #fff; text-align:center; z-index: 999;}
 .topbar .menu {float: left; position:relative; width : 150px; left: 8%;}
 .topbar .menu a {text-decoration: none; display: block;}
 .topbar .menu li:hover {color: #444; background-color: lightcoral; transform: translate all 1s;}
-.topbar .submenu {width: 150px; position: absolute; translate: all 0.5s; color: #fff; background-color: rgb(120, 110, 110); text-align: center; z-index: 999; display:none;}
+.topbar .submenu {width: 150px; position: absolute; translate: all 0.5s; color: #fff; 
+	background-color: rgb(120, 110, 110); text-align: center; z-index: 999; display:none;}
 
 .slides {float:left; position:relative; width: 100%; height:650px; overflow:hidden; margin-top:36px;}
 .slides > img {position: absolute; width: 100%; height:100%; z-index:99;
@@ -84,38 +86,54 @@ h1,h2,h3,h4,h5,h6,p,span {color: #777;}
 .picwrap4 > .R-pg {position: absolute; font-size: 26pt; top : 40%;  left: 96.9%; z-index: 9999;}
 
 
+
 .topdum{display:none;}
 .topbar{display:none;}
 .slides {top: -36px;}
 
 
+/* 반응형 */
+/* Mobile */
+@media screen and (min-width: 576px) {
+	.topdum{display:none;}
+  .topbar{display:none;}
+  .slides {top: -36px;}
+} 
+
+/* Tablet / sm */
+@media screen and (min-width: 768px) {
+	.topdum{display:none;}
+	.topbar{display:none;}
+	.slides {top: -36px;}
+} 
+/* lg */
+@media screen and (min-width: 992px) {
+	.topdum{display:none;}
+	.topbar{display:none;}
+	.slides {top: -36px;}
+} 
+/* xl */
+@media screen and (min-width: 1200px) {
+	.topdum{display:none;}
+	.topbar{display:none;}
+	.slides {top: -36px;}
 
 
-@media screen and (min-width : 576px){
-	
-	
-};
-@media screen and (min-width : 768px){
+} 
+/* xxl */
+@media screen and (min-width: 1300px) {
 	.topdum{display:block;}
 	.topbar{display:block;}
 	.slides {top: 36px;}
-	
-	
-	
-};
-@media screen and (min-width : 997px){
-	
-
-	
-	
-};
-@media screen and (min-width : 1200px){
-
-	
 
 
-};
-
+} 
+/* xxxl */
+@media screen and (min-width: 1920px) {
+	.topdum{display:block;}
+	.topbar{display:block;}
+	.slides {top: 36px;}
+} 
 
 
 

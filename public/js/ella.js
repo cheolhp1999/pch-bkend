@@ -47,3 +47,11 @@ function slide() {
 // });
 
 
+$(".pic img").click(function(){
+	var src = $(this).attr("src");
+	$(".lg-pic img").css("opacity", 0.7);
+	$(".lg-pic img").attr("src", src);
+	$(".lg-pic img").stop().animate({"opacity": 1}, 500);
+});
+/* trigger를 이용하여 eq에서 지정한 순번에 있는 그림으로 큰그림을 나오게 하는 조치 */
+// $(".pic img").eq(4).trigger("click");
