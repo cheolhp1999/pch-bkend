@@ -78,8 +78,46 @@ h1,h2,h3,h4,h5,h6,p,span {color: #777;}
 
 .fsttxt {margin-top: 10px; font-family: 'HY견고딕'; font-size: 13pt;}
 .picwrap3 > ul > a {font-size: 26pt;}
-.picwrap4 > ul > img {padding: 5%}
-.picwrap4 > ul > a {font-size: 26pt; margin-top : 40%;}
+.picwrap4 {padding-left: 1.5%; padding-right: 1%; border: 1px solid blue;}
+.picwrap4 > ul > img {padding: 5%;}
+.picwrap4 > .L-pg {position: absolute; font-size: 26pt; top : 40%;  left: 0.1%; z-index: 9999;}
+.picwrap4 > .R-pg {position: absolute; font-size: 26pt; top : 40%;  left: 96.9%; z-index: 9999;}
+
+
+.topdum{display:none;}
+.topbar{display:none;}
+.slides {top: -36px;}
+
+
+
+
+@media screen and (min-width : 576px){
+	
+	
+};
+@media screen and (min-width : 768px){
+	.topdum{display:block;}
+	.topbar{display:block;}
+	.slides {top: 36px;}
+	
+	
+	
+};
+@media screen and (min-width : 997px){
+	
+
+	
+	
+};
+@media screen and (min-width : 1200px){
+
+	
+
+
+};
+
+
+
 
 
 
