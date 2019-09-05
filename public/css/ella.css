@@ -89,11 +89,14 @@ h1,h2,h3,h4,h5,h6,p,span {color: #777;}
 .picwrap4 > .R-pg {position: absolute; font-size: 26pt; top : 40%;  left: 96.9%; z-index: 9999;}
 
 
+footer {width: 1920px; height: 490px;}
+
+
+
 
 .topdum{display:none;}
 .topbar{display:none;}
 .slides {top: -36px;}
-
 
 /* 반응형 */
 /* Mobile */

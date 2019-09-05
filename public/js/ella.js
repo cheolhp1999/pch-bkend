@@ -34,18 +34,20 @@ window.onscroll = function() {
 	stickyscroll();
 };
 
+
 var topbar = document.getElementById("h-header");
 var sticky = topbar.offsetTop;
 
-
 function stickyscroll() {
-	console.log(sticky);
-	console.log(window.pageYOffset);
+	// console.log(sticky);
+	// console.log(window.pageYOffset);
 	if(window.pageYOffset > sticky) {
 		topbar.classList.add("sticky");
+		$(".topbar").css({"background-color" : "#fff", "color": "#222"});
 	}
 	else {
 		topbar.classList.remove("sticky");
+		$(".topbar").css({"background-color" : "#222", "color": "#fff"});
 	}
 };
 
@@ -75,9 +77,9 @@ $(".pic img").click(function() {
 // $(".pic img").eq(4).trigger("click");
 
 // screen refreshing term 10sec
-var intervalRefesh = setInterval(function() {
-	location.reload();
-}, 10000);
+// var intervalRefesh = setInterval(function() {
+// 	location.reload();
+// }, 10000);
 
 
 // if  you click arrows then page be lefted
@@ -99,6 +101,12 @@ $(".picwrap4 > a").click(function() {
 		now = 0;
 	}
 });
+
+
+
+
+
+
 
 
 
