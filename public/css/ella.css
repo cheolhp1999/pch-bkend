@@ -84,7 +84,8 @@ h1,h2,h3,h4,h5,h6,p,span {color: #777;}
 .picwrap4 > ul > img {padding: 5%;}
 .picwrap4 > .L-pg {position: absolute; font-size: 26pt; top : 40%;  left: 0.1%; z-index: 9999;}
 .picwrap4 > .R-pg {position: absolute; font-size: 26pt; top : 40%;  left: 96.9%; z-index: 9999;}
-
+.packpic4 > img {display: block;}
+.packpic5 > img {display: none;}
 
 
 .topdum{display:none;}
