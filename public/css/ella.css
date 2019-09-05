@@ -24,15 +24,15 @@ h1,h2,h3,h4,h5,h6,p,span {color: #777;}
 .topbar {width:100%; height: 55px; line-height: 55px; margin-top: calc(20px);
 	background-color: #222; color: #fff; text-align:center; z-index: 999;}
  /* {position: fixed; overflow-y: scroll;} */
-.sticky {position: fixed; top:0; width: 100%;}
-.sticky + .cc {padding-top: 186px;}
+.sticky {position: fixed; top: -25px; width: 100%;}
+.sticky + .cc {padding-top: 45px;}
 .topbar .menu {float: left; position:relative; width : 150px; left: 8%;}
 .topbar .menu a {text-decoration: none; display: block;}
 .topbar .menu li:hover {color: #444; background-color: lightcoral; transform: translate all 1s;}
 .topbar .submenu {width: 150px; position: absolute; translate: all 0.5s; color: #fff; 
 	background-color: rgb(120, 110, 110); text-align: center; z-index: 999; display:none;}
 
-.slides {float:left; position:relative; width: 100%; height:650px; overflow:hidden; margin-top:36px;}
+.slides {float:left; position:relative; width: 100%; height:650px; overflow:hidden; margin-top: -50px;}
 .slides > img {position: absolute; width: 100%; height:100%; z-index:99;
 }
 
