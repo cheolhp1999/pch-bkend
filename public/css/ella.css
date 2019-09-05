@@ -21,8 +21,11 @@ h1,h2,h3,h4,h5,h6,p,span {color: #777;}
 .want .shopping:hover {opacity: 0.7}
 .want .wishing:hover {opacity: 0.7}
 
-.topbar {width:100%; height: 55px; line-height: 55px; margin-top: calc(20px); position: fixed; 
+.topbar {width:100%; height: 55px; line-height: 55px; margin-top: calc(20px);
 	background-color: #222; color: #fff; text-align:center; z-index: 999;}
+ /* {position: fixed; overflow-y: scroll;} */
+.sticky {position: fixed; top:0; width: 100%;}
+.sticky + .cc {padding-top: 186px;}
 .topbar .menu {float: left; position:relative; width : 150px; left: 8%;}
 .topbar .menu a {text-decoration: none; display: block;}
 .topbar .menu li:hover {color: #444; background-color: lightcoral; transform: translate all 1s;}

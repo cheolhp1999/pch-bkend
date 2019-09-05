@@ -29,6 +29,36 @@ function slide() {
 	});
  }
 
+// scroll-up limit 55px over then topbar position fixed onb the top screen
+window.onscroll = function(){
+	stickyscroll()};
+
+var topbar = document.getElementById("h-header");
+var sticky = topbar.offsetTop;
+
+function stickyscoll() {
+	if(window.pageYoffset > sticky) {
+topbar.classList.add("sticky");
+	}
+	else{
+		topbar.classList.remove("sticky");
+	}
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // if click on show more box then display background related display none image
  $(".showmore > a").click(function () {
 	$(".more").eq(0).stop().css({"display":"block", "opacity":1})
@@ -54,31 +84,30 @@ $(".pic img").click(function(){
 // $(".pic img").eq(4).trigger("click");
 
 // screen refreshing term 10sec
-/*
 var intervalRefesh = setInterval(function(){
 location.reload();
 }, 10000);
-*/
-var now=0;
+
+
 // if  you click arrows then page be lefted
 // arrow click to change self color
+var now;
 $(".picwrap4 > a").click(function(){
 	if (now==0) {
 	 $(".packpic4").removeClass("d-flex").addClass("d-none");
 	 $(".packpic5").removeClass("d-none").addClass("d-flex");
-	 $(".picwrap4 > .L-pg").removeClass("text-dark").addClass("text-danger");
-	 $(".picwrap4 > .R-pg").removeClass("text-danger").addClass("text-dark");
+	 $(".picwrap4 > .L-pg").removeClass("text-danger").addClass("text-dark");
+	 $(".picwrap4 > .R-pg").removeClass("text-dark").addClass("text-danger");
 	 now++;
 	}
 	else {
-	$(".packpic5 > img").eq(now).class({"display":"none", "opacity":0})
-	$(".packpic4 > img").eq(now).class({"display":"block", "opacity":1})
-	$(".picwrap4 > .L-pg").removeClass("text-danger").addClass("text-dark");
-	$(".picwrap4 > .R-pg").removeClass("text-dark").addClass("text-danger");
-	now=0;
+		$(".packpic4").removeClass("d-none").addClass("d-flex");
+		$(".packpic5").removeClass("d-flex").addClass("d-none");
+		$(".picwrap4 > .L-pg").removeClass("text-dark").addClass("text-danger");
+		$(".picwrap4 > .R-pg").removeClass("text-danger").addClass("text-dark");
+		now=0;
 	}
-	});
-
+});
 
 
 
