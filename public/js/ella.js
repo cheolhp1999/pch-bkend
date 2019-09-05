@@ -54,17 +54,18 @@ $(".pic img").click(function(){
 // $(".pic img").eq(4).trigger("click");
 
 // screen refreshing term 10sec
+/*
 var intervalRefesh = setInterval(function(){
 location.reload();
 }, 10000);
-
+*/
 var now=0;
 // if  you click arrows then page be lefted
 // arrow click to change self color
-$(".picwrap4 > a").stop().click(function(){ 
-	if (now=0) {
-	 $(".packpic4 > img").eq(0).class({"display":"none", "opacity":0})
-	 $(".packpic5 > img").eq(0).class({"display":"block", "opacity":1})
+$(".picwrap4 > a").click(function(){
+	if (now==0) {
+	 $(".packpic4").removeClass("d-flex").addClass("d-none");
+	 $(".packpic5").removeClass("d-none").addClass("d-flex");
 	 $(".picwrap4 > .L-pg").removeClass("text-dark").addClass("text-danger");
 	 $(".picwrap4 > .R-pg").removeClass("text-danger").addClass("text-dark");
 	 now++;
