@@ -1,67 +1,58 @@
 // menu click to display sub menu
-$(".topbar > .menu > li").mouseover(function () {
+$(".topbar > .menu > li").mouseover(function() {
 	$(this).children(".submenu").stop().slideDown();
 });
-$(".topbar > .menu > li").mouseleave(function () {
+$(".topbar > .menu > li").mouseleave(function() {
 	$(this).children(".submenu").stop().slideUp();
 });
 
 // slides play on interval
 var now = 0;
-var next = now+1;
+var next = now + 1;
 var imgs = 2
 var depth = 10;
 var interval;
 
 start();
 
-function start(){
-	$(".slides > img").css({"left":"-100%"});
-	$(".slides > img").eq(now).css({"left":0});
+function start() {
+	$(".slides > img").css({"left": "-100%"});
+	$(".slides > img").eq(now).css({"left": 0});
 	interval = setInterval(slide, 3000);
 };
 
-function slide() { 
-	$(".slides > img").eq(next).css("z-index", depth++).stop().animate({"left":0},500,
-	function(){
-		$(this).siblings().css({"left": "-100%"});
-		next==imgs? next=0: next++;
-	});
- }
+function slide() {
+	$(".slides > img").eq(next).css("z-index", depth++).stop().animate({"left": 0}, 500,
+		function() {
+			$(this).siblings().css({"left": "-100%"});
+			next == imgs ? next = 0 : next++;
+		});
+}
 
 // scroll-up limit 55px over then topbar position fixed onb the top screen
-window.onscroll = function(){
-	stickyscroll()};
+window.onscroll = function() {
+	stickyscroll();
+};
 
 var topbar = document.getElementById("h-header");
 var sticky = topbar.offsetTop;
 
-function stickyscoll() {
-	if(window.pageYoffset > sticky) {
-topbar.classList.add("sticky");
+
+function stickyscroll() {
+	console.log(sticky);
+	console.log(window.pageYOffset);
+	if(window.pageYOffset > sticky) {
+		topbar.classList.add("sticky");
 	}
-	else{
+	else {
 		topbar.classList.remove("sticky");
 	}
 };
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 // if click on show more box then display background related display none image
- $(".showmore > a").click(function () {
-	$(".more").eq(0).stop().css({"display":"block", "opacity":1})
+$(".showmore > a").click(function() {
+	$(".more").eq(0).stop().css({"display": "block", "opacity": 1})
 });
 
 //  $(".feature .packpic2 > img").mouseover(function () {
@@ -74,7 +65,7 @@ topbar.classList.add("sticky");
 // });
 
 // small image click to display on large scale image (in use Gallay)
-$(".pic img").click(function(){
+$(".pic img").click(function() {
 	var src = $(this).attr("src");
 	$(".lg-pic img").css("opacity", 0.7);
 	$(".lg-pic img").attr("src", src);
@@ -84,28 +75,28 @@ $(".pic img").click(function(){
 // $(".pic img").eq(4).trigger("click");
 
 // screen refreshing term 10sec
-var intervalRefesh = setInterval(function(){
-location.reload();
+var intervalRefesh = setInterval(function() {
+	location.reload();
 }, 10000);
 
 
 // if  you click arrows then page be lefted
 // arrow click to change self color
 var now;
-$(".picwrap4 > a").click(function(){
-	if (now==0) {
-	 $(".packpic4").removeClass("d-flex").addClass("d-none");
-	 $(".packpic5").removeClass("d-none").addClass("d-flex");
-	 $(".picwrap4 > .L-pg").removeClass("text-danger").addClass("text-dark");
-	 $(".picwrap4 > .R-pg").removeClass("text-dark").addClass("text-danger");
-	 now++;
+$(".picwrap4 > a").click(function() {
+	if(now == 0) {
+		$(".packpic4").removeClass("d-flex").addClass("d-none");
+		$(".packpic5").removeClass("d-none").addClass("d-flex");
+		$(".picwrap4 > .L-pg").removeClass("text-danger").addClass("text-dark");
+		$(".picwrap4 > .R-pg").removeClass("text-dark").addClass("text-danger");
+		now++;
 	}
 	else {
 		$(".packpic4").removeClass("d-none").addClass("d-flex");
 		$(".packpic5").removeClass("d-flex").addClass("d-none");
 		$(".picwrap4 > .L-pg").removeClass("text-dark").addClass("text-danger");
 		$(".picwrap4 > .R-pg").removeClass("text-danger").addClass("text-dark");
-		now=0;
+		now = 0;
 	}
 });
 
