@@ -25,6 +25,14 @@ function slide() {
 	$(".slides > img").eq(next).css("z-index", depth++).stop().animate({"left": 0}, 500,
 		function() {
 			$(this).siblings().css({"left": "-100%"});
+			if(now == 0 || now == 3) {
+			$(".txt1").eq(0).sibling().css({"display": "block"});
+			} 
+			else { 
+			$(".txt1").eq(now).css({"display": "block"});
+			$(".txt1").eq(0).css({"display": "none"});
+			$(".txt1").eq(3).css({"display": "none"});
+			}
 			next == imgs ? next = 0 : next++;
 		});
 }

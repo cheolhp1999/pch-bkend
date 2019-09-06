@@ -13,6 +13,17 @@ h1,h2,h3,h4,h5,h6,p,span {color: #777;}
 .tipbar {width: 100%; height: 36px; text-align: center; line-height: 36px; margin: auto; background-color: #fee9e8; color:#976570;}
 .tipbar > a {padding: 0 100px; text-decoration: none;}
 .topdum-cont {width: 100%;}
+
+
+.overtext {position: relative; width: 100%; height: 50px;}
+.text-all {position: relative; width: 100%; height: 50px;}
+.text-all > li {position: absolute; z-index: 999;}
+.txt1 {left: 20%; top: -1070%; text-align: center; cursor: pointer}
+.txt1 > ul> a:hover{background-color: white !important; color:black !important;}
+.txt2 {left: 20%; top: -1070%; text-align: center; cursor: pointer}
+.txt2 > ul > a:hover{background-color: white !important; color:black !important;}
+.l-tt {font-weight: bold; font-size: 36px; font-family:'견고딕'; text-decoration: none; color:black;}
+.shopping > a {font-size : 16pt; width: 30px; height: 20px; text-align: center; line-height: 20px; border: 1px solid none; padding: 1px 5px; border-radius: 45%; background-color: darkorange;}
 .logo {float: left; margin-left: 150px; width: 40%; height: 2rem;}
 .logo > a > img:hover {opacity: 0.7;}
 .logo .logoimg {width: 100px; height: 60px; margin-top: 50px;}
@@ -47,7 +58,7 @@ h1,h2,h3,h4,h5,h6,p,span {color: #777;}
 .pager {width: 100%; height: 100px; position: relative; opacity: 1; font-size: 24pt;}
 .dots {width:100%; height:40px; top: -100%; justify-content: center; position:absolute; z-index: 999; opacity:0.7; color: #000; font-size: 24pt;}
 
-.subwrap {width: 1172px; margin-top: -3%; left:-16%;}
+.subwrap {width: 1172px; margin-top: -5%; left:-16%;}
 .subwrap > img {padding: 20px;}
 .lin {width: 40%;}
 .lin2 {width: 40%;}
@@ -91,10 +102,15 @@ h1,h2,h3,h4,h5,h6,p,span {color: #777;}
 .picwrap4 > .R-pg {position: absolute; font-size: 26pt; top : 40%;  left: 96.9%; z-index: 9999;}
 
 footer {width: 1920px; height: 490px;}
-.icon {width: 30px; height:30px; font-size : 20pt;}
+.icon {width: 30px; height:30px; font-size : 20pt; cursor: pointer;}
+.icon:hover {color: blue;}
 .like-share > i {border: 1px solid white; width: 100px;}
 .fafs > li > i {width: 100px; border-radius: 6px;}
-.thumb {width: 100px;}
+.thumb {width: 100px; padding-left: 10px; background-color: darkcyan; color: white; cursor: pointer;}
+.thumb:hover {color: black; background-color: cyan;}
+.share {cursor:pointer; background-color: darkcyan; color: white;}
+.share:hover {color: black; background-color: cyan;}
+
 .submit {width: 100%;}
 
 .topdum{display:none;}
