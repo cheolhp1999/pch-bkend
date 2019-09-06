@@ -43,11 +43,13 @@ function stickyscroll() {
 	// console.log(window.pageYOffset);
 	if(window.pageYOffset > sticky) {
 		topbar.classList.add("sticky");
-		$(".topbar").css({"background-color" : "#fff", "color": "#222"});
+		$(".topbar").removeClass("colorChg2").addClass("colorChg");
+		//$(".topbar").css({"background-color" : "#fff", "color": "#222"});
 	}
 	else {
 		topbar.classList.remove("sticky");
-		$(".topbar").css({"background-color" : "#222", "color": "#fff"});
+		$(".topbar").removeClass("colorChg").addClass("colorChg2");
+		//$(".topbar").css({"background-color" : "#222", "color": "#fff"});
 	}
 };
 
