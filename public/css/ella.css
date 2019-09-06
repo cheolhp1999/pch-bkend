@@ -18,11 +18,13 @@ h1,h2,h3,h4,h5,h6,p,span {color: #777;}
 .overtext {position: relative; width: 100%; height: 50px;}
 .text-all {position: relative; width: 100%; height: 50px;}
 .text-all > li {position: absolute; z-index: 999;}
-.txt1 {left: 20%; top: -1070%; text-align: center; cursor: pointer}
-.txt1 > ul> a:hover{background-color: white !important; color:black !important;}
-.txt2 {left: 20%; top: -1070%; text-align: center; cursor: pointer}
-.txt2 > ul > a:hover{background-color: white !important; color:black !important;}
-.l-tt {font-weight: bold; font-size: 36px; font-family:'견고딕'; text-decoration: none; color:black;}
+.scr-on {display: block;}
+.scr-off {display: none;}
+.txtl {left: 20%; top: -1070%; text-align: center; cursor: pointer; display: none;}
+.txtl > ul> a:hover{background-color: white !important; color:black !important;}
+.txtr {left: 40%; top: -1070%; text-align: center; cursor: pointer; display: none;}
+.txtr > ul > a:hover{background-color: white !important; color:black !important;}
+.lg-tt {font-weight: bold; font-size: 36px; font-family:'견고딕'; text-decoration: none; color:black;}
 .shopping > a {font-size : 16pt; width: 30px; height: 20px; text-align: center; line-height: 20px; border: 1px solid none; padding: 1px 5px; border-radius: 45%; background-color: darkorange;}
 .logo {float: left; margin-left: 150px; width: 40%; height: 2rem;}
 .logo > a > img:hover {opacity: 0.7;}
@@ -64,8 +66,8 @@ h1,h2,h3,h4,h5,h6,p,span {color: #777;}
 .lin2 {width: 40%;}
 .lin3 {width: 40%;}
 .txt {text-align:center; font-size: 16pt; margin-top: -5px;}
-.txt2 {margin-top: -5px; text-align:center; font-family: 'HY견고딕'; width: 10%; height: 10px; font-size: 16pt;}
-.txt3 {margin-top: -5px; text-align:center; font-family: 'HY견고딕'; width: 20%; height: 10px; font-size: 16pt;}
+.txt2 {margin-top: -5px; text-align:center; font-family: 'HY견고딕'; width: 10%; height: 10px; font-size: 16pt; display: none;}
+.txt3 {margin-top: -5px; text-align:center; font-family: 'HY견고딕'; width: 20%; height: 10px; font-size: 16pt; display: none;}
 .stitle {margin-top: 30px;}
 .stitle2 {margin-top: 50px;}
 

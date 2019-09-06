@@ -25,14 +25,12 @@ function slide() {
 	$(".slides > img").eq(next).css("z-index", depth++).stop().animate({"left": 0}, 500,
 		function() {
 			$(this).siblings().css({"left": "-100%"});
-			if(now == 0 || now == 3) {
-			$(".txt1").eq(0).sibling().css({"display": "block"});
-			} 
-			else { 
-			$(".txt1").eq(now).css({"display": "block"});
-			$(".txt1").eq(0).css({"display": "none"});
-			$(".txt1").eq(3).css({"display": "none"});
-			}
+			if(now == 0) $(".txt1").removeClass("scr-off").addClass("scr-on");
+			else if (now == 2) $(".txt2").removeClass("scr-off").addClass("scr-on");
+			else {
+				$(".txt1").removeClass("scr-on").addClass("scr-off");
+				$(".txt2").removeClass("scr-on").addClass("scr-off");
+			}			
 			next == imgs ? next = 0 : next++;
 		});
 }
@@ -41,7 +39,6 @@ function slide() {
 window.onscroll = function() {
 	stickyscroll();
 };
-
 
 var topbar = document.getElementById("h-header");
 var sticky = topbar.offsetTop;
