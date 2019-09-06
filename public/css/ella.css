@@ -88,11 +88,12 @@ h1,h2,h3,h4,h5,h6,p,span {color: #777;}
 .picwrap4 > .L-pg {position: absolute; font-size: 26pt; top : 40%;  left: 0.1%; z-index: 9999;}
 .picwrap4 > .R-pg {position: absolute; font-size: 26pt; top : 40%;  left: 96.9%; z-index: 9999;}
 
-
 footer {width: 1920px; height: 490px;}
-
-
-
+.icon {width: 30px; height:30px; font-size : 20pt;}
+.like-share > i {border: 1px solid white; width: 100px;}
+.fafs > li > i {width: 100px; border-radius: 6px;}
+.thumb {width: 100px;}
+.submit {width: 100%;}
 
 .topdum{display:none;}
 .topbar{display:none;}
