@@ -18,6 +18,7 @@ start();
 function start() {
 	$(".slides > img").css({"left": "-100%"});
 	$(".slides > img").eq(now).css({"left": 0});
+	$(".txtR").removeClass("scr-on").addClass("scr-off");
 	interval = setInterval(slide, 3000);
 };
 
@@ -25,12 +26,16 @@ function slide() {
 	$(".slides > img").eq(next).css("z-index", depth++).stop().animate({"left": 0}, 500,
 		function() {
 			$(this).siblings().css({"left": "-100%"});
-			if(now == 0) $(".txt1").removeClass("scr-off").addClass("scr-on");
-			else if (now == 2) $(".txt2").removeClass("scr-off").addClass("scr-on");
+			if(now == 1) $(".txtR").removeClass("scr-off").addClass("scr-on");
+			else if (now == 2) {
+				$(".txtR").removeClass("scr-on").addClass("scr-off");
+				$(".txtL").removeClass("scr-off").addClass("scr-on");
+			}
 			else {
-				$(".txt1").removeClass("scr-on").addClass("scr-off");
-				$(".txt2").removeClass("scr-on").addClass("scr-off");
-			}			
+				$(".txtR").removeClass("scr-on").addClass("scr-off");
+				$(".txtL").removeClass("scr-on").addClass("scr-off");
+			}
+			now	== imgs ? now = 0 : now++
 			next == imgs ? next = 0 : next++;
 		});
 }
