@@ -26,6 +26,7 @@ h1,h2,h3,h4,h5,h6,p,span {color: #777;}
 .txtR {left: 40%; top: -1070%; text-align: center; cursor: pointer;}
 .txtR > ul > a:hover{background-color: white !important; color:black !important;}
 .lg-tt {font-weight: bold; font-size: 36px; font-family:'견고딕'; text-decoration: none; color:black;}
+.lg2-tt {font-weight: bold; font-size: 36px; font-family:'견고딕'; text-decoration: none; color:black;}
 
 .shopping > a {font-size : 16pt; width: 30px; height: 20px; text-align: center; line-height: 20px; border: 1px solid none; padding: 1px 5px; border-radius: 45%; background-color: darkorange;}
 .logo {float: left; margin-left: 150px; width: 40%; height: 2rem;}
