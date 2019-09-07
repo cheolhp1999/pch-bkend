@@ -66,11 +66,11 @@ h1,h2,h3,h4,h5,h6,p,span {color: #777;}
 .lin {width: 40%;}
 
 .txt {text-align:center; font-size: 16pt; margin-top: -5px;}
-.txt2 {margin-top: -5px; text-align:center; font-family: 'HY견고딕'; width: 19.9%; height: 10px; font-size: 16pt;}
-.stitle {margin-top: 50px;}
+.txt2 {margin-top: 30px; text-align:center; font-family: 'HY견고딕'; width: 19.9%; height: 10px; font-size: 16pt;}
+.stitle {margin-top: 10px;}
 
 .bann {position: relative; width: 33%; text-align: center; cursor: pointer;}
-.bann > img:hover{transform: scale(1.2);}
+.bann > img:hover{width: 120%; translate: 0.8s all}
 .md-tt {position:absolute; left: 30%; top:50%; width: 150px; height: 40px; font-weight: bold; font-size: 20px; font-family:'견고딕'; text-decoration: none; color:white; z-index: 777;}
 
 .picwrap {width:1172px; height: 36rem; border:none; border: 1px solid red;}
@@ -81,8 +81,8 @@ h1,h2,h3,h4,h5,h6,p,span {color: #777;}
 .packpic {width: 25%;}
 .packpic2 {width: 30%;}
 .packpic3 {width: 20%;}
-.packpic4 {width: 20%;}
-.packpic5 {width: 20%;}
+.packpic4 {width: 20%; z-index:888;}
+.packpic5 {width: 20%; z-index:888;}
 .remains {width:24px; height:32px; border: 1px solid #777; line-height: 32px;}
 
 .showmore {margin-top: 30px;}
@@ -102,8 +102,8 @@ h1,h2,h3,h4,h5,h6,p,span {color: #777;}
 .picwrap3 > ul > a {font-size: 26pt;}
 .picwrap4 {padding-left: 1.5%; padding-right: 1%; border: 1px solid blue;}
 .picwrap4 > ul > img {padding: 5%;}
-.picwrap4 > .L-pg {position: absolute; font-size: 26pt; top : 40%;  left: 0.1%; z-index: 999;}
-.picwrap4 > .R-pg {position: absolute; font-size: 26pt; top : 40%;  left: 96.9%; z-index: 999;}
+.picwrap4 > .L-pg {position: absolute; font-size: 26pt; top : 40%;  left: 2%; z-index: 999;}
+.picwrap4 > .R-pg {position: absolute; font-size: 26pt; top : 40%;  left: 95.5%; z-index: 999;}
 
 footer {width: 1920px; height: 490px;}
 .icon {width: 30px; height:30px; font-size : 20pt; cursor: pointer;}
