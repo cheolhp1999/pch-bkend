@@ -15,7 +15,6 @@ h1,h2,h3,h4,h5,h6,p,span {color: #777;}
 .tipbar > a {padding: 0 100px; text-decoration: none;}
 .topdum-cont {width: 100%;}
 
-
 .overtext {position: relative; width: 100%; height: 50px;}
 .text-all {position: relative; width: 100%; height: 50px;}
 .text-all > li {position: absolute; z-index: 999;}
@@ -27,14 +26,18 @@ h1,h2,h3,h4,h5,h6,p,span {color: #777;}
 .txtR {left: 40%; top: -1070%; text-align: center; cursor: pointer;}
 .txtR > ul > a:hover{background-color: white !important; color:black !important;}
 .lg-tt {font-weight: bold; font-size: 36px; font-family:'견고딕'; text-decoration: none; color:black;}
-.shopping > a {font-size : 16pt; width: 30px; height: 20px; text-align: center; line-height: 20px; border: 1px solid none; padding: 1px 5px; border-radius: 45%; background-color: darkorange;}
+.shopping {width: 30px; height: 30px; text-align: center; line-height: 30px; color: black;
+	border: 1px solid none; padding: 1px 5px; border-radius: 50%; background-color: darkorange;}
 .logo {float: left; margin-left: 150px; width: 40%; height: 2rem;}
 .logo > a > img:hover {opacity: 0.7;}
 .logo .logoimg {width: 100px; height: 60px; margin-top: 50px;}
 .content {float:right; width: 60%; margin-top: -50px; padding-left: 20%;}
 .search {width: 30%; border: 1px solid #777;}
-.want .shopping:hover {opacity: 0.7}
-.want .wishing:hover {opacity: 0.7}
+
+.want {display: flex; justify-content: left;}
+.want .udln {cursor: pointer;}
+.want .udln > div {border-bottom: 1px solid #222; width: 0; transition: all 1s;}
+.want .udln:hover > div {width: 100%;} 
 
 .topbar {width:100%; height: 55px; line-height: 55px; margin-top: calc(20px);
 	background-color: #222; color: #fff; text-align:center; z-index: 9999;}
@@ -128,7 +131,8 @@ footer {width: 1920px; height: 490px;}
 @media screen and (min-width: 576px) {
 	.topdum{display:none;}
   .topbar{display:none;}
-  .slides {top: -36px;}
+	.slides {top: -36px;}
+	
 } 
 
 /* Tablet / sm */
@@ -136,19 +140,20 @@ footer {width: 1920px; height: 490px;}
 	.topdum{display:none;}
 	.topbar{display:none;}
 	.slides {top: -36px;}
+
 } 
 /* lg */
 @media screen and (min-width: 992px) {
 	.topdum{display:none;}
 	.topbar{display:none;}
 	.slides {top: -36px;}
+
 } 
 /* xl */
 @media screen and (min-width: 1200px) {
 	.topdum{display:none;}
 	.topbar{display:none;}
 	.slides {top: -36px;}
-
 
 } 
 /* xxl */
@@ -157,13 +162,13 @@ footer {width: 1920px; height: 490px;}
 	.topbar{display:block;}
 	.slides {top: 36px;}
 
-
 } 
 /* xxxl */
 @media screen and (min-width: 1920px) {
 	.topdum{display:block;}
 	.topbar{display:block;}
 	.slides {top: 36px;}
+
 } 
 
 
